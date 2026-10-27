@@ -46,7 +46,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<!-- Fonts load without blocking first paint; system fonts show until they arrive -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&family=IBM+Plex+Mono:wght@500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&family=IBM+Plex+Mono:wght@500&display=swap"></noscript>
 
 <script type="application/ld+json">
 {
@@ -191,8 +193,9 @@ section{padding:clamp(64px,9vw,120px) 0}
 .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:56px 40px;margin-top:52px}
 .svc h3{font-size:clamp(1.5rem,2.4vw,1.9rem);margin:22px 0 10px}
 .svc p{color:var(--muted);max-width:48ch;margin-bottom:16px}
-.confirm{font:500 .78em/1 var(--mono);color:var(--accent-text);background:rgba(176,80,26,.1);padding:2px 5px;border-radius:2px;white-space:nowrap}
+.confirm{font:500 .85em/1 var(--mono);color:#7f360c;background:rgba(176,80,26,.08);padding:2px 5px;border-radius:2px;white-space:nowrap}
 .dark .confirm{color:var(--accent-light);background:rgba(224,132,63,.14)}
+.dark .on-light .confirm{color:#7f360c;background:rgba(176,80,26,.08)}
 @media (max-width:760px){.svc-grid{grid-template-columns:1fr;gap:48px}}
 
 /* ---------- steps ---------- */
