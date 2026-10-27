@@ -19,7 +19,7 @@ Placeholders:
 8. Eight photos: hero, Custom Doors, Moldings, Millwork, Shop Drawings, two shop-floor shots, plus a 1200 × 630 social share image. Sizes are printed on each placeholder.
 9. Social proof: Google rating, three real customer quotes (with permission), client logos. **If these aren't available, delete the whole "Trusted by Cache Valley builders" section** instead of launching with placeholders.
 10. Facebook page URL (footer link is `#`).
-11. Netlify form notifications: add an email notification for the `quote` form so submissions reach rex@axntwp.com.
+11. Form notifications: submissions currently email hogan@tearawaymedia.com (Netlify > Site configuration > Notifications). Switch or add rex@axntwp.com when the site goes live.
 12. Custom domain: once connected, update the `canonical`, `og:url`, and JSON-LD `url` in `index.html`.
 
 ## Form notes
